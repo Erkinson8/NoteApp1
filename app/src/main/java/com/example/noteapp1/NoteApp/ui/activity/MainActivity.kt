@@ -22,11 +22,8 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.container1) as NavHostFragment
         navController = navHostFragment.navController
     }
-
     @SuppressLint("MissingSuperCall")
     override fun onBackPressed() {
         finishAndRemoveTask()
     }
-
-//applicationContext.deleteDatabase("note.database")
 }
