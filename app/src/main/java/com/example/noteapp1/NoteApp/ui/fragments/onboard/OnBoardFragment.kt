@@ -1,4 +1,4 @@
-package com.example.noteapp1
+package com.example.noteapp1.NoteApp.ui.fragments.onboard
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -12,6 +12,8 @@ import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
+import com.example.noteapp1.NoteApp.ui.adapter.OnBoardViewpagerAdapter
+import com.example.noteapp1.R
 import com.example.noteapp1.databinding.FragmentOnBoardBinding
 
 

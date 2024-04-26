@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.devtools.ksp")
+    id ("kotlin-kapt")
 }
 
 android {
@@ -52,6 +54,12 @@ android {
         implementation("androidx.viewpager2:viewpager2:1.0.0")
         implementation("me.relex:circleindicator:2.1.6")
         implementation("com.airbnb.android:lottie:3.4.0")
+        val roomVersion = "2.6.1"
+        implementation("androidx.room:room-ktx:$roomVersion")
+        ksp("androidx.room:room-compiler:$roomVersion")
+        implementation ("androidx.room:room-runtime:2.4.0")
     }
 }
-
+dependencies {
+    implementation(libs.androidx.ui.graphics.android)
+}
