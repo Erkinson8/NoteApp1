@@ -27,6 +27,4 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
         finishAndRemoveTask()
     }
-
-//applicationContext.deleteDatabase("note.database")
 }

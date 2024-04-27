@@ -32,21 +32,34 @@
             app:layout_constraintHorizontal_bias="0.04"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.06" />
+            app:layout_constraintVertical_bias="0.065" />
 
-        <ImageView
-            android:id="@+id/iv_menu2"
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:src="@drawable/img"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.96"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.07" />
+    <ImageView
+        android:id="@+id/iv_menu2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
 
-        <androidx.appcompat.widget.SearchView
+   <ImageView
+        android:id="@+id/iv_menu3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_sandvich"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+
+    <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,66 +72,10 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.15" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_plus"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:text="+"
-            android:textColor="@color/white"
-            android:textSize="40dp"
-            android:background="@drawable/button_round"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.9"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.9" />
-
-    <!--     <EditText
-           android:id="@+id/ed_title"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_margin="20dp"
-           android:hint="Введите текст"
-           android:textColorHint="@color/lightGray"
-           app:layout_constraintBottom_toBottomOf="parent"
-           app:layout_constraintEnd_toEndOf="parent"
-           app:layout_constraintHorizontal_bias="0.5"
-           app:layout_constraintStart_toStartOf="parent"
-           app:layout_constraintTop_toTopOf="parent"
-           app:layout_constraintVertical_bias="0.5"/>
-
-       <TextView
-           android:id="@+id/save_text"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:textSize="24sp"
-           android:layout_margin="20dp"
-           android:textColor="@color/lightGray"
-           app:layout_constraintBottom_toBottomOf="parent"
-           app:layout_constraintEnd_toEndOf="parent"
-           app:layout_constraintHorizontal_bias="0.5"
-           app:layout_constraintStart_toStartOf="parent"
-           app:layout_constraintTop_toTopOf="parent"
-           app:layout_constraintVertical_bias="0.4"/>
-
-       <Button
-           android:id="@+id/btn_save"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Сохранить"
-           android:layout_margin="20dp"
-           app:layout_constraintBottom_toBottomOf="parent"
-           app:layout_constraintEnd_toEndOf="parent"
-           app:layout_constraintHorizontal_bias="0.5"
-           app:layout_constraintStart_toStartOf="parent"
-           app:layout_constraintTop_toTopOf="parent"
-           app:layout_constraintVertical_bias="0.6"/>-->
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_note"
-        android:layout_width="357dp"
-        android:layout_height="411dp"
+        android:layout_width="350dp"
+        android:layout_height="420dp"
         android:layout_margin="20dp"
         android:background="@color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/btn_add"
@@ -141,6 +98,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
