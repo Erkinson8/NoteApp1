@@ -3,13 +3,13 @@ package com.example.noteapp1.NoteApp.ui.fragments.onboard
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.noteapp1.NoteApp.ui.adapter.OnBoardViewpagerAdapter
@@ -37,7 +37,7 @@ class OnBoardFragment : Fragment() {
             .getSharedPreferences("onBoardPrefs", Context.MODE_PRIVATE)
         val onBoardShown = sharedPreferences.getBoolean("onBoardShown", false)
         if (onBoardShown) {
-            findNavController().navigate(R.id.action_onBoardFragment_to_noteFragment)
+            findNavController().navigate(R.id.action_onBoardFragment_to_singUpFragment)
             return
         }
         initialize()
@@ -104,7 +104,7 @@ class OnBoardFragment : Fragment() {
             )
         }
     }
-    override fun onDestroyView() {
+   override fun onDestroyView() {
         super.onDestroyView()
         sharedPreferences.edit().putBoolean("onBoardShown", true).apply()
     }

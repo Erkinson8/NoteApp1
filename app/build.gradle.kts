@@ -4,6 +4,7 @@ plugins {
     id("com.google.devtools.ksp")
     id ("kotlin-kapt")
     id("androidx.navigation.safeargs.kotlin")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -58,9 +59,18 @@ android {
         val roomVersion = "2.6.1"
         implementation("androidx.room:room-ktx:$roomVersion")
         ksp("androidx.room:room-compiler:$roomVersion")
-        implementation ("androidx.room:room-runtime:2.4.0")
+        implementation("androidx.room:room-runtime:2.4.0")
+
+        dependencies {
+            implementation(libs.androidx.ui.graphics.android)
+
+            implementation(platform("com.google.firebase:firebase-bom:32.8.1"))
+            implementation("com.google.firebase:firebase-analytics")
+            implementation(libs.firebase.auth)
+            implementation("com.google.firebase:firebase-auth")
+            implementation("com.google.android.gms:play-services-auth:21.1.0")
+            implementation(platform("com.google.firebase:firebase-bom:32.8.1"))
+
+        }
     }
-}
-dependencies {
-    implementation(libs.androidx.ui.graphics.android)
 }
