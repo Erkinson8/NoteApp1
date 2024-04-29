@@ -31,12 +31,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_cod"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
         android:text="Войти через Google"
-        android:textSize="22sp"
+        android:textSize="20sp"
+        app:cornerRadius="40dp"
         android:backgroundTint="#FF9800"
         android:inputType="textNoSuggestions"
         app:layout_constraintVertical_bias="0.8"

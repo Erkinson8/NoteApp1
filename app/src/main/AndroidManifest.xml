@@ -17,7 +17,8 @@
         <activity
             android:name=".NoteApp.ui.activity.MainActivity"
             android:exported="true"
-            android:theme="@style/NT">
+            android:theme="@style/NT"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

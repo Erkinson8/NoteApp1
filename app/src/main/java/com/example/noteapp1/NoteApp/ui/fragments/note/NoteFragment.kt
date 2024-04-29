@@ -44,8 +44,16 @@ class NoteFragment : Fragment(), OnClickItem {
     }
     private fun setupListener() = with(binding) {
         btnAdd.setOnClickListener {
-            findNavController().navigate(R.id.action_noteFragment_to_noteDetailFragment)
+            findNavController().navigate(
+                R.id.action_noteFragment_to_noteDetailFragment
+           /* navOptions{
+                anim{
+                    enter = R.anim.slide_in_right
+                    exit = R.anim.slide_out_left
+                }
+            }*/)
         }
+
         ivMenu2.setOnClickListener {
             toggleMenuVisibility(ivMenu2, ivMenu3)
             isConstraintLayout = true

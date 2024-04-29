@@ -69,8 +69,12 @@ android {
             implementation(libs.firebase.auth)
             implementation("com.google.firebase:firebase-auth")
             implementation("com.google.android.gms:play-services-auth:21.1.0")
-            implementation(platform("com.google.firebase:firebase-bom:32.8.1"))
+            implementation("com.google.firebase:firebase-firestore")
+            implementation ("com.google.firebase:firebase-firestore-ktx:23.0.3")
 
         }
     }
+}
+dependencies {
+    implementation(libs.firebase.firestore)
 }
